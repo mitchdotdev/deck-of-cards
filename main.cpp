@@ -12,6 +12,7 @@ int main() {
 	      std::cout << "\n\n- - - INITIAL DECK - - -\n\n";
 		  mainDeck.printDeck();
 		  modifiedDeck.randomShuffle();
+		  shuffleCount++;
 		  std::cout << "\n\n- - - RANDOMLY SHUFFLED DECK - - -\n\n";
 		  modifiedDeck.printDeck();
 		  while(mainDeck.deckNotEqual(modifiedDeck)) // Comparing starting deck to shuffled deck
@@ -26,7 +27,8 @@ int main() {
       case 2: // Perfect Shuffle
 		  std::cout << "\n\n- - - INITIAL DECK - - -\n\n";
 		  mainDeck.printDeck();
-	      modifiedDeck.perfectShuffle();
+	          modifiedDeck.perfectShuffle();
+		  shuffleCount++;
 		  std::cout << "\n\n- - - PERFECTLY SHUFFLED DECK - - -\n\n";
 		  modifiedDeck.printDeck();
 		  while(mainDeck.deckNotEqual(modifiedDeck)) // Comparing starting deck to shuffled deck
